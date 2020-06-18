@@ -1,0 +1,1035 @@
+/**** reset code ****/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+body {
+margin: 0;
+padding: 0;
+line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+display:block;
+}
+
+nav ul {
+list-style:none;
+}
+
+blockquote, q {
+quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+content:'';
+content:none;
+}
+
+a {
+margin:0;
+padding:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+background-color:#ff9;
+color:#000;
+text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+background-color:#ff9;
+color:#000;
+font-style:italic;
+font-weight:bold;
+}
+
+del {
+text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+border-bottom:1px dotted;
+cursor:help;
+}
+
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+display:block;
+height:1px;
+border:0;
+border-top:1px solid #cccccc;
+margin:1em 0;
+padding:0;
+}
+
+input, select {
+vertical-align:middle;
+}
+
+
+/**** MY CODE ****/
+.wrapper {
+max-width: 1000px;
+margin: auto;
+}
+
+header {
+background-color: black;
+width: 100%;
+height: 60px;
+position: fixed;
+top: 0;
+z-index: 1;
+}
+
+header .logo {
+display: inline-block;
+float: left;
+padding: 2px 70px 0 0;
+margin-left: 172px;
+}
+
+header nav ul li {
+list-style-type: none;
+display: inline-block;
+float: left;
+
+}
+header nav ul li a {
+font-family: verdana;
+display: block;
+color: #ffffff ;
+font-size: 17px;
+text-align: center;
+padding: 23px 0px 0 30px;
+text-decoration: none;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+header nav ul li a:hover{
+text-decoration: underline;
+}
+
+/* SEARCH BUTTON */
+
+header .search-container {
+float: right;
+margin-right: 170px;
+}
+
+header input[type=text] {
+padding: 5px;
+margin-top: 17px;
+font-size: 16px;
+border: none;
+}
+
+header .search-container button {
+float: right;
+padding: 5px 10px;
+margin-top: 17px;
+margin-right: 16px;
+background: #ddd;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+header .search-container button:hover {
+background: #ccc;
+}
+
+/*** SECOND NAV-BAR ***/
+.navbar {
+display: block;
+position:fixed;
+top: 60px;
+overflow: hidden;
+background-color: #dfdfdf;
+font-family: Arial;
+width: 100%;
+z-index: 1;
+
+}
+
+
+/* The dropdown container */
+.dropdown {
+float: left;
+overflow: hidden;
+background-color: inherit;
+
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+font-weight: 500;
+font-size: 12.4px;
+border: none;
+outline: none;
+color: black;
+padding: 11px 0px 7px 0px;
+text-transform: uppercase;
+background-color: inherit;
+letter-spacing: 1.2px;
+border-bottom: 3px solid transparent;
+margin-right: 28px; /* Important for vertical align on mobile phones */
+}
+.dropdown:hover .dropbtn {
+border-bottom: 3px solid black;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+display: none;
+position: fixed;
+background-color: #f9f9f9;
+width: 100%;
+height: 350px;
+left: 0;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+display: inline-block;
+float: left;
+width: 22%;
+padding: 10px;
+background-color: #f9f9f9;
+}
+
+.column h3 {
+font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-size: 12px;
+padding: 16px 0 16px 0;
+border-bottom: 1px solid #dfdfdf;
+}
+/* Style links inside the columns */
+.column a {
+text-transform: capitalize;
+font-size: 13px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+float: none;
+color: black;
+padding: 10px 0;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+/* Add a background color on hover */
+.column a:hover {
+text-decoration: underline;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+.column-1 {
+max-width: 400px;
+margin: auto;
+float: left;
+}
+.column-1 a {
+display:inline-block;
+margin: 0 10px 10px 0;
+}
+
+.column-1 h3 {
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 10px;
+padding: 25px 0 17px 0;
+border-bottom: 1px solid #dfdfdf;
+}
+.column-2 {
+max-width: 400px;
+margin: auto;
+float: left;
+}
+.column-2 a {
+display:inline-block;
+margin: 0 10px 10px 0;
+}
+.column-2 a:hover {
+opacity: 0.7;
+}
+.column-2 h3 {
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 10px;
+padding: 25px 0 17px 0;
+border-bottom: 1px solid #dfdfdf;
+}
+.column-3 {
+max-width: 400px;
+margin: auto;
+float: left;
+}
+.column-3 a {
+display:inline-block;
+margin: 0 10px 10px 0;
+}
+.column-3 a:hover {
+opacity: 0.7;
+}
+.column-3 h3 {
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 10px;
+padding: 25px 0 17px 0;
+border-bottom: 1px solid #dfdfdf;
+}
+.column-4 {
+max-width: 450px;
+margin: auto;
+float: left;
+}
+.column-4 a {
+display:inline-block;
+margin: 0 10px 10px 0;
+}
+.column-4 a:hover {
+opacity: 0.7;
+}
+.column-4 h3 {
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 10px;
+padding: 25px 0 17px 0;
+border-bottom: 1px solid #dfdfdf;
+}
+.column-5 {
+max-width: 400px;
+margin: auto;
+float: left;
+}
+.column-5 a {
+display:inline-block;
+margin: 0 10px 10px 0;
+}
+.column-5 a:hover {
+opacity: 0.7;
+}
+.column-5 h3 {
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 10px;
+padding: 25px 0 17px 0;
+border-bottom: 1px solid #dfdfdf;
+}
+.column-6 {
+max-width: 400px;
+margin: auto;
+float: left;
+}
+.column-6 a {
+display:inline-block;
+margin: 0 10px 10px 0;
+}
+.column-6 a:hover {
+opacity: 0.7;
+}
+.column-6 h3 {
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 10px;
+padding: 25px 0 17px 0;
+border-bottom: 1px solid #dfdfdf;
+}
+.column-7 {
+max-width: 400px;
+margin: auto;
+float: left;
+}
+.column-7 a {
+display:inline-block;
+margin: 0 10px 10px 0;
+
+}
+.column-7 a:hover {
+opacity: 0.7;
+}
+
+.column-7 h3 {
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 10px;
+padding: 25px 0 17px 0;
+border-bottom: 1px solid #dfdfdf;
+}
+
+/* Main page */
+.icons {
+width: 100%;
+margin-top: 105px;
+}
+
+.icons ul li {
+list-style-type: none;
+
+}
+.icons ul li a {
+font-family: 'Apercu', arial, sans-serif;
+letter-spacing: 1.1px;
+font-size: 11px;
+text-transform: uppercase;
+color: #065535;
+text-decoration: none;
+}
+
+.wrapper-discount {
+max-width: 1000px;
+margin: 35px auto;
+}
+.main-discount1 {
+margin-bottom: 30px;
+text-decoration: none;
+float: left;
+width: 487px;
+background-color: #BADA55;
+font-size: 14px;
+text-transform:uppercase;
+color: black;
+padding: 5px;
+text-align: center;
+font-family: 'Apercu', arial, sans-serif;
+font-weight: 600;
+color: #ffffff;
+}
+.main-discount2 {
+text-decoration: none;
+float: right;
+width: 487px;
+background-color:#FFA500;
+font-size: 14px;
+text-transform:uppercase;
+color: black;
+padding: 5px;
+text-align: center;
+font-family: 'Apercu', arial, sans-serif;
+font-weight: 600;
+color: #ffffff;
+}
+
+/*--------SLIDESHOW ---------*/
+.slide-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.effect {
+  animation-name: effect;
+  animation-duration: 1s;
+}
+@keyframes effect {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.dot-container {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+.dot-container span{
+  margin-top: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+  height: 17px;
+  width: 17px;
+  opacity: 0.8;
+  background-color: #cbcbcc;
+  display: inline-block;
+}
+.dot-container .dotactive {
+  background-color: gray;
+}
+.best-selling {
+font-weight: 600;
+font-size: 20px;
+text-align: center;
+margin: 120px 0 40px 0;
+text-transform: capitalize;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+letter-spacing: 2.2px;
+cursor: pointer;
+}
+
+/***  SLIDE SHOW   ***/
+
+/* Slideshow container */
+.slideshow-container {
+margin: 20px auto;
+max-width: 1000px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+display: inline-block;
+margin: -350px 0;
+cursor: pointer;
+padding: 14px;
+color: black;
+font-weight: bold;
+font-size: 25px;
+transition: 0.6s ease;
+border-radius: 3px;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.slideshow-container .next {
+float: right;
+display: block;
+margin-right: -25px;
+}
+
+.slideshow-container .prev {
+display: block;
+float: left;
+margin-left: -15px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.6);
+color: white;
+}
+
+.main-page-slide ul {
+height: 500px;
+margin-left: 25px;
+}
+
+.main-page-slide ul li {
+list-style-type: none;
+display: inline-block;
+float: left;
+border: 1px solid transparent;
+padding: 0;
+margin: 0 1px;
+
+}
+.main-page-slide ul li:hover .slide-item-size {
+display: block;
+}
+
+.main-page-slide ul li a {
+text-decoration: none;
+border: 1px solid transpar;
+}
+
+.slide-item-name {
+font-family: Apercu,Gill Sans MT,Gill Sans,Arial,sans-serif;
+display: block;
+margin: 10px 0;
+padding: 0 0 5px 0;
+border-bottom: 1px solid #dfdfdf;
+color: black
+}
+
+.slide-item-info {
+font-family: Apercu,Gill Sans MT,Gill Sans,Arial,sans-serif;
+display: block;
+margin: 10px 0 ;
+padding: 0;
+color: black
+}
+
+.slide-item-price {
+font-family: Apercu,Gill Sans MT,Gill Sans,Arial,sans-serif;
+text-align: center;
+display: inline-block;
+float: right;
+margin: 16px 0 0 0;
+padding: 0 12px 0 0;
+color: black
+}
+
+.slide-item-size {
+color: #000000;
+font-size: 16px;
+font-family: Apercu,Gill Sans MT,Gill Sans,Arial,sans-serif;
+display: none;
+width: 100%;
+margin-bottom: 0;
+background-color: #dfdfdf;
+text-align: center;
+margin: 50px 0 0 0;
+padding: 10px 0 ;
+transition: all .3s ease-out;
+}
+.wrapper-expl {
+display: inline-block;
+margin: auto;
+max-width: 1000px;
+}
+.expl-more {
+color: black;
+box-sizing: border-box;
+text-transform: uppercase;
+font-size: 13px;
+font-family: Apercu,Gill Sans MT,Gill Sans,Arial,sans-serif;
+display: block;
+float: left;
+margin: 10px 0 50px 610px;
+text-decoration: none;
+background-color: inherit;
+padding: 10px 20px;
+border: 1px solid black;
+line-height: 10px;
+font-weight: 500;
+transition: all .3s ease-out;
+
+}
+.wrapper-new-arr {
+display: inline-block;
+margin: auto;
+max-width: 1000px;
+}
+.expl-more:hover {
+color: white;
+background-color: black;
+}
+.new-arrv {
+color: black;
+text-transform: uppercase;
+font-size: 19px;
+font-family:  sans-serif;
+display: block;
+float: left;
+margin: 70px 0 15px 595px;
+text-decoration: none;
+font-weight: 600;
+letter-spacing: 2px;
+
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
+
+/* cases */
+.index-links {
+display: block;
+margin: 0 auto;
+max-width: 1000px;
+}
+.wrapper-cases {
+display: inline-block;
+}
+.index-links div {
+opacity: 1;
+float: left;
+margin: 8px ;
+height: 430px;
+transition: all .3s ease-out;
+}
+.index-links div:hover {
+opacity: 0.7;
+}
+
+.index-cases-square {
+width: calc(40% - 20px)
+}
+
+.index-cases-rectangle {
+width: calc(60% - 20px)
+}
+.index-cases-rectangle1 {
+position: relative;
+width: calc(60% - 20px)
+}
+.index-def1 {
+font-family: Arial,sans-serif;
+margin: 338px 0 0 430px;
+display: block;
+padding: 12px 18px;
+position: absolute;
+width: 260px;
+background-color: #fcfcfc;
+cursor: pointer;
+transition: all .3s ease-out;
+}
+.index-def2 {
+font-family: Arial,sans-serif;
+margin: 774px 0 0px 32px;
+display: block;
+padding: 17px 18px;
+position: absolute;
+width: 260px;
+background-color: #fcfcfc;
+cursor: pointer;
+transition: all .3s ease-out;
+}
+
+.def-1 {
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: .09em;
+line-height: 1.6;
+font-weight: 600;
+}
+.def-2 {
+float: left;
+font-size: 11px;
+line-height: 1.6;
+letter-spacing: .1em;
+}
+/* ADIDAS BRANDS */
+.brand-cases {
+  float: left;
+  width: calc(30% - 20px)
+}
+.wrapper-cases {
+  margin-bottom: 50px;
+}
+.brand-links div {
+opacity: 1;
+float: left;
+margin: 10px 42px 0 8px ;
+transition: all .3s ease-out;
+}
+.brand-links div:hover {
+opacity: 0.7;
+}
+.brand-cases a , h1 {
+  letter-spacing: 2px;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: Arial,sans-serif;
+  text-align: center;
+  padding: 36px 0 14px 0;
+}
+.brand-cases h1 {
+  padding-left: 36px;
+}
+/* women promotion */
+.wrapper-men-promotion {
+  display: block;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.wrapper-men-promotion img {
+  transition: all .4s ease-out;
+}
+.wrapper-men-promotion img:hover {
+  opacity: 0.7;
+
+}
+
+.footer-info {
+  max-width: 1290px;
+  margin: 60px auto 35px auto;
+}
+.footer-info span {
+  font-family: Apercu,Gill Sans MT,Gill Sans,Arial,sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #6d6e6e;
+  letter-spacing: 1.5px;
+  line-height:24px;
+}
+.footer-info p {
+  line-height:24px;
+  color: #6d6e6e;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  font-family: Apercu,Gill Sans MT,Gill Sans,Arial,sans-serif;
+
+}
+
+/* footer flags */
+
+.footer-flag {
+background-color: #FFFFFF;
+display: block;
+width: 100%;
+margin: 0;
+}
+
+
+.ft-flag-column2 , .ft-flag-column3 {
+margin-left: 20px;
+display: inline-block;
+float: left;
+width: 13%;
+padding: 10px;
+color: #000000;
+}
+.ft-flag-column2 a, .ft-flag-column3 a {
+text-transform: capitalize;
+font-size: 13px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+float: none;
+color: #000000;
+padding: 8px 0;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.ft-flag-column2 h2, .ft-flag-column3 h2 {
+font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-size: 14px;
+padding: 16px 0 26px 0;
+}
+.ft-flag-column h2 {
+font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-size: 14px;
+padding: 16px 30px 28px 0;
+}
+
+.ft-flag-h2 {
+margin-top: 20px;
+}
+/* Style links inside the columns */
+.ft-flag-column a {
+text-transform: capitalize;
+font-size: 13px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+float: none;
+color: #000000;
+padding: 8px 0;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+/* Add a background color on hover */
+.ft-flag-column2 a:hover {
+text-decoration: underline;
+}
+.ft-flag-column3 a:hover {
+text-decoration: underline;
+}
+/* Clear floats after the columns */
+.ft-flag-row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* FOOTER */
+.footer {
+background-color: black;
+display: block;
+width: 100%;
+margin: 0;
+}
+
+.ft-column {
+margin-left: 20px;
+display: inline-block;
+margin-right: 10px;
+float: left;
+width: 27%;
+padding: 10px;
+color: white;
+}
+.ft-column2 , .ft-column3 {
+margin-left: 20px;
+display: inline-block;
+margin-right: 10px;
+float: left;
+width: 15%;
+padding: 10px;
+color: white;
+}
+.ft-column2 a, .ft-column3 a {
+text-transform: capitalize;
+font-size: 13px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+float: none;
+color: hsla(0,0%,100%,.7);
+padding: 8px 0;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.ft-column2 h2, .ft-column3 h2 {
+font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-size: 16px;
+padding: 16px 0 26px 0;
+}
+.ft-column h2 {
+font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-size: 16px;
+padding: 16px 0 28px 0;
+}
+.ft-column h3 {
+font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-size: 12px;
+padding: 190px 0 16px 0;
+}
+.ft-column p {
+padding-bottom: 4px;
+letter-spacing: 1px;
+font-size: 14px;
+color: hsla(0,0%,100%,.7);
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+line-height: 20px;
+}
+.ft-h2 {
+margin-top: 20px;
+}
+/* Style links inside the columns */
+.ft-column a {
+text-transform: capitalize;
+font-size: 13px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+float: none;
+color: hsla(0,0%,100%,.7);
+padding: 8px 0;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.ft-email {
+padding-top: 20px;
+letter-spacing: 1px;
+font-size: 14px;
+color: hsla(0,0%,100%,.7);
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+line-height: 18px;
+}
+
+/* Add a background color on hover */
+.ft-column2 a:hover {
+text-decoration: underline;
+}
+.ft-column3 a:hover {
+text-decoration: underline;
+}
+/* Clear floats after the columns */
+.ft-row:after {
+content: "";
+display: table;
+clear: both;
+}
+/* footer icons */
+.ft-icon-media a {
+color: white;
+margin: 0 10px 0 0;
+font-size: 32px;
+display: inline-block;
+float: left;
+transition: all .2s ease-out;
+
+}
+.ft-icon-media a:hover {
+color: hsla(0,0%,100%,.7);
+}
+.ft-contact {
+margin-top: 60px;
+}
+.ft-icon-load {
+text-decoration: none;
+}
+.ft-icon-load a {
+color: white;
+padding: 10px;
+border-radius: 5px;
+border: 1px solid white;
+margin: 0 15px 0 0;
+font-size: 18px;
+display: inline-block;
+float: left;
+transition: all .4s ease-out;
+
+}
+.ft-icon-load a:hover {
+color: black;
+background-color: white;
+}
